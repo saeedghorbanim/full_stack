@@ -1,0 +1,34 @@
+<div>
+    <form action = '/dojos' method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <div>
+    		<label>Your Name:</label>
+	    	<input type='text' name='dojo[name]'>
+    	</div>
+	    <div>
+	    	<label>Dojo Location:</label>
+		    <select name="dojo[location]">
+				<option value="Dallas, TX">Dallas, TX</option>
+				<option value="San Diego, Ca">San Diego, Ca</option>
+				<option value="New York, NY">New York, NY</option>
+				<option value="San Jose, Ca">San Jose, Ca</option>
+			</select>
+	    </div>
+		<div>
+			<label>Favorite language:</label>
+			<select name="dojo[language]" class="select">
+				<option value="Javascript">Javascript</option>
+				<option  value="Java">Java</option>
+				<option value="Python">Python</option>
+				<option value="CSS">CSS</option>
+			</select>
+		</div>
+		<div>
+			<label>Comment:</label>
+			<textarea rows="4" cols="35" name="dojo[comment]"></textarea>
+		</div>
+        <input type='submit' value='Submit'>
+
+    </form>
+
+</div>
