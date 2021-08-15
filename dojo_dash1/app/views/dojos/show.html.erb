@@ -1,0 +1,8 @@
+<h1><%= @dojo.branch %></h1>
+
+<p>Addres: <%= @dojo.street %></p>
+<p>City: <%= @dojo.city %> State: <%= @dojo.state %></p>
+
+<%= link_to "Home", root_path %>
+
+<a href="/dojos/<%= @dojo.id %>/edit">Edit</a>

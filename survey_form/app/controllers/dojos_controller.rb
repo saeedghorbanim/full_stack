@@ -26,7 +26,7 @@ class DojosController < ApplicationController
         #flash message to display session[:views] number when incremented
         flash[:success] = "Thanks for submitting this form! You have submitted this form #{ session[:views] } times now."
 
-        #redirecting to present the results in /dojos/results page once submitted
+        #redirecting to present the results in /dojos/result page once submitted
         redirect_to '/dojos/result'
     end
 
